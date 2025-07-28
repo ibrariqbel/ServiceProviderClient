@@ -1,0 +1,31 @@
+:root {
+    --background-color:#210F37;
+    --text-color: #F1EFEC;
+    --link-color: #CAE8BD;
+    --button-color: #34699A;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    min-height: 90vh;
+     padding-top: 1px;
+}
+.DarkMood{
+    min-height: 90vh;
+    background-color: var(--background-color);
+}
+.LightMood{
+     min-height: 90vh;
+    background-color: var(--link-color);
+
+}
+
+.container{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

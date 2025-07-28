@@ -1,0 +1,171 @@
+
+.navbar {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    /* border-radius: 5px; */
+    justify-content: space-between;
+
+    >ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        >li {
+            list-style-type: none;
+            padding: 0 10px;
+            font-size: 20px;
+            font-size: 600;
+
+            >a {
+                text-decoration: none;
+                color: var(--text-color);
+            }
+        }
+    }
+
+    >.menubar {
+        display: none;
+        
+    }
+
+    >.userProfile {
+        display: flex;
+        align-items: center;
+
+        >p {
+            font-style: italic;
+            font-size: 20px;
+            font-size: 600;
+            padding-right: 50px;
+
+
+            >button {
+                border-radius: 5px;
+                font-size: 20px;
+                font-size: 600;
+                border: 2px solid var(--text-color);
+                background-color: transparent;
+                color: var(--text-color);
+                >a{
+                    text-decoration: none;
+                   color: var(--text-color);
+                }
+            }
+        }
+
+        >.dropdown {
+            display: flex;
+            margin:0 20px 0  0;
+             
+            >ul {
+                position: absolute;
+                top: 47px;
+                right: 0;
+                width: 200px;
+                min-height: 86.6vh;
+                background-color: var(--background-color);
+                height: 600px;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 30px;
+                list-style-type: none;
+
+                >li {
+                    padding-top: 20px;
+                   cursor: pointer;
+                   font-size: larger;
+
+                   &:hover{
+                    background-color: purple;
+                    
+                    border-radius: 10px;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                   }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        display: flex;
+        padding: 10px 20px;
+        background-color: var(--button-color);
+        color: var(--text-color);
+        border-radius: 5px;
+        justify-content: space-between;
+
+        >ul {
+            display: none;
+
+        }
+
+        >.menubar {
+            display: flex;
+            text-align: center;
+            font-size: 22px;
+            padding-top: 10px;
+
+            >ul {
+                position: absolute;
+
+                left: 0;
+                top: 60px;
+                width: 250px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+                background-color: burlywood;
+                padding-top: 50px;
+
+                >li {
+                    list-style-type: none;
+                    padding: 10px;
+
+                    >span {
+                        >a {
+                            text-decoration: none;
+                            list-style-type: none;
+                            color: var(--text-color);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        >.userProfile {
+            >p {
+                font-style: italic;
+                font-size: 20px;
+                font-size: 600;
+                padding-right: 50px;
+
+                >button {
+                    border-radius: 5px;
+                    font-size: 20px;
+                    font-size: 600;
+                    border: 2px solid var(--text-color);
+                    background-color: transparent;
+                    color: var(--text-color);
+                }
+            }
+
+            .dropdown {
+                display: none;
+            }
+        }
+    }
+}
